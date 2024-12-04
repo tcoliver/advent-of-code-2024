@@ -1,0 +1,20 @@
+[project]
+name = "advent-of-code-2024"
+version = "0.1.0"
+description = "Solutions for Advent of Code 2024"
+readme = "README.md"
+authors = [
+    { name = "Trent Oliver", email = "9102481+tcoliver@users.noreply.github.com" },
+]
+requires-python = ">=3.13"
+dependencies = ["typer>=0.14.0"]
+
+[project.scripts]
+aoc24 = "advent_of_code_2024:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=8.3.4"]
