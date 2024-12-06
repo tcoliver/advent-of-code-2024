@@ -3,7 +3,7 @@ from typing import Annotated
 
 import typer
 
-from . import day01, day02, day03
+from . import day01, day02, day03, day04
 
 app = typer.Typer(rich_markup_mode="rich")
 app.command(name="d1p1")(day01.part_1)
@@ -12,6 +12,8 @@ app.command(name="d2p1")(day02.part_1)
 app.command(name="d2p2")(day02.part_2)
 app.command(name="d3p1")(day03.part_1)
 app.command(name="d3p2")(day03.part_2)
+app.command(name="d4p1")(day04.part_1)
+app.command(name="d4p2")(day04.part_2)
 
 
 @app.callback(no_args_is_help=True)
